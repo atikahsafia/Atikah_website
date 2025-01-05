@@ -1,0 +1,259 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body{
+            margin:0; font-family: Arial, Helvetica, sans-serif;
+            background-image: url(IMAGES/menu\ background\ new_page-0001.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center; color: darkslategrey; line-height: 1.6;
+        }
+
+        /* Navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: rgb(5, 87, 53);
+            padding:0
+            position sticky;
+            top:0;
+            z-index: 100;
+        }
+
+        .topnav a{
+            float:left;
+            color:azure;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover{
+            background-color: blue;
+            color: aliceblue;
+        }
+
+        .topnav :active {
+            background-color: rgb(82, 46, 3);
+        }
+
+        /*Profile image styling */
+        .img-box {
+            display: block;
+            margin: 50px auto;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(red, green, blue, alpha);
+        }
+        
+        .img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /*Content section*/
+        .content {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        .content h1 {
+            font-size: 36px;
+            color: ghostwhite;
+        }
+
+        .content p{
+            font-size: 18px;
+        }
+
+        /* Divider and extra styling */
+        hr {
+            border: 1px solid #17202a;
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        .button-group img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s, border 0.3s;
+        }
+
+        .button-group img:hover {
+            transform: scale(1.1);
+            border: 2px solid #c7aec6;
+        }
+
+        /*Social media icons*/
+        .social-media a {
+            margin: 0 10px;
+        }
+
+        .social-media img {
+            width: 40px;
+            transition: opacity 0.3s;
+        }
+
+        .social-media img:hover {
+            opacity: 0.7;
+        }
+
+        /*Responsive Layout */
+        @media (max-width: 768px)
+    {
+        .topnav a {
+            font-size: 14px;
+            padding: 12px 14px;
+        }
+        .button-group img {
+            width: 120px;
+        }
+        .img-box {
+            width: 150px;
+            height: 150px;
+        }
+
+        .content h1 {
+            font-size: 28px;
+        }
+
+        .content p {
+            font-size: 16px;
+        }
+    }
+    </style>
+</head>
+<body>
+
+<!--Navigation Bar-->
+<div class="topnav" style="display: flex; align-items: center; justify-content: space-between;">
+    <div style="display: flex; align-items: center;">
+        <a class="active" href="home.html" aria-label="Home">Home</a>
+        <a href="new biodata.html" target="_self" aria-label="Biodata">My Biodata</a>
+        <a href="family.html" target="_self" aria-label="Family">My Family</a>
+        <a href="friends.html" target="_self" aria-label="Friends">My Friends</a>
+        <a href="education.html" target="_self" aria-label="Education">My Education</a>
+        <a href="experience.html" target="_self" aria-label="Experience">My Experience</a>
+        <a href="gallery.html" target="_self" aria-label="Gallery">My Gallery</a>
+    </div>
+    <div style="display: flex; align-items: center; margin-right: 10px;">
+        <a href="https://www.instagram.com/tkaeyw" style="margin-right: 10px;">
+            <img src="IMAGES/ig icon.webp" style="width: 30px; height: 30px;" alt="Instagram">
+        </a>
+        <a href="https://www.pinterest.com/tkaaass/">
+            <img src="IMAGES/pinterest icon new.png" style="width: 30px; height: 30px;" alt="Pinterest">
+        </a>
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<body onload="startTime()">
+
+    
+    <div align="center">
+    <div id="txt"></div>
+    
+    <script>
+    function startTime() {
+      const today = new Date();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      let s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+      setTimeout(startTime, 1000);
+    }
+    
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+    </script>
+    </div>
+<!--Profile Image-->
+<div class="img-box">
+    <img src="IMAGES/atikah pasar seni.jpg" alt="Profile Picture">
+</div>
+
+<!--Main Content-->
+<div class="content">
+    <h3>Welcome to teekadiaries</h3>
+    <p>Hi there! Welcome to my little corner of the internet. This space is my way of sharing everything about me. Take a look around and enjoy!.</p>
+</div>
+
+<div align="center">
+    <hr>
+    <font size="5" color="17202a" face="baguet script"><strong>sharing my creative journey</strong></font>
+    <br>
+    <font size="3"
+    color="#17202a"
+    face="baguet script"><strong> 
+    </strong></font>
+</div>
+
+    <!--Button Links-->
+    <div class="button-group"
+    align="center">
+    <a href="new biodata.html"><img src="IMAGES/biodata icon.jpg" alt="atikah biodata"
+        style="width: 70px;"></a>
+    <a href="family.html"><img src="IMAGES/family icon.jpg" alt="atikah family"
+        style="width: 70px;"></a>
+    <a href="friends.html"><img src="IMAGES/friends icon new.jpg" alt="atikah friends"
+        style="width: 70px;"></a>
+    <a href="education.html"><img src="IMAGES/education ico.jpg" alt="atikah education"
+        style="width: 70px;"></a>
+</div>
+
+<body>
+
+        <div style="text-align: center;">
+
+            <audio controls>
+                <source src="AUDIO/audio sza.mp3" type="audio/ogg">
+                <source src="AUDIO/audio sza.mp3" type="audio/mpeg">
+                Your browser does not support the audio element
+            </audio>
+
+            <!-- Contact Section -->
+<div class="content">
+    <h3>Contact Me</h3>
+    <p>If you’d like to get in touch, feel free to reach out!</p>
+    
+    <!-- Contact Form -->
+    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        
+        <input type="submit" value="Send Message">
+    </form>
+
+    <!-- Direct Email Link -->
+    <p>Or you can email me directly at: <a href="mailto:safianuratikah@gmail.com">safianuratikah@gmail.com</a></p>
+</div>
+
+<footer class="bg green-800 text-white py-6">
+    <div class="container mx-auto text-center">
+        <p class="text-lg">&copy; January 2024 Teekadiaries. All right reserved.</p>
+         <!--Relation Link-->
+    </div>
+</footer>  
+</body>
+</html>
